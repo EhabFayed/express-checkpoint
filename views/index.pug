@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form
+    .form-group
+      label(for='name') name
+      input#name.form-control(type='text' placeholder='add name')
+    .form-group
+      label(for='email') email
+      input#email.form-control(type='email' placeholder='add name')
+    .form-group
+      label(for='message') message
+      textarea#message.form-control(placeholder='add message')
+    .form-group
+      select.form-cotnrol
+        option(value='male') male
+        option(value='female') female
+        option(value='other') other
+        input#button(type="submit")    
